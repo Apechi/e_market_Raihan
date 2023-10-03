@@ -51,9 +51,8 @@ class PembelianController extends Controller
             $inputPembelianDetail = PurchaseDetail::create($data2);
         }
 
-        session()->flash('data', $data['kode_masuk']);
 
-        return redirect('pembelian')->with('success', 'Transaksi Berhasil');
+        return $this->invoiceCreate($data['kode_masuk']);
     }
 
 

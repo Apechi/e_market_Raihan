@@ -108,7 +108,7 @@
                 let mode = btn.data('mode')
                 //get modal element
                 let mMethod = $(this).find('#method')
-                let mForm = $(this).find('#form')
+                let mForm = $(this).find('#x-form')
                 let mTitle = $(this).find('.modal-title')
                 let mInput = $(this).find('#nama_produk')
                 let Mbtn = $(this).find('.submit')
@@ -119,7 +119,7 @@
                     case 'create':
                         mTitle.text("Tambah Produk")
                         Mbtn.removeClass('d-none');
-                        mForm.attr('action', "{{ route('products.create') }}");
+                        mForm.attr('action', "products");
                         break;
                     case 'edit':
                         jsonObject = JSON.stringify(btn.data('json'))

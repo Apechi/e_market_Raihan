@@ -6,7 +6,7 @@
 
             </div>
             <div class="modal-body">
-                <x-form method="POST" action="" class="mt-4" id="form">
+                <x-form method="POST" action="" class="mt-4">
                     @include('app.products.form-inputs')
                     <div id="method"></div>
                     <div class="mt-4">

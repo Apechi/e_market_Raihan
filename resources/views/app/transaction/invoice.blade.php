@@ -63,7 +63,7 @@
                     <td class="left kop">{{ $pembelian->supplier->nama_pemasok }}</td>
                     <td></td>
                     <td>Tanggal</td>
-                    <td class="left kop">{{ Carbon\Carbon::parse($pembelian->kode_masuk)->format('d F Y') }}</td>
+                    <td class="left kop">{{ Carbon\Carbon::parse($pembelian->tanggal_masuk)->format('d F Y') }}</td>
                 </tr>
                 <tr>
                     <td colspan="2">No Pembelian</td>
